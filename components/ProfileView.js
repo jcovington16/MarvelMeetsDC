@@ -8,15 +8,14 @@ export default function ProfileView({
             profile={route.params.profile}
             onFollowingPress={
                 profile => {
-                    console.log("PROFILE:::: ", profile)
-                    navigation.push("ViewFollowing..", {
+                    navigation.push("ViewFollowing", {
                         ethereumAddress: profile.ownedBy
                     })
                 }
             }
             onProfileImagePress={
                 publication => {
-                    navigation.push("ViewProfile", {
+                    navigation.push("Profile", {
                         profile: publication.profile,
                     })
                 }
