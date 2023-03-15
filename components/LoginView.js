@@ -8,11 +8,11 @@ import {
   }
   
   export default function LoginView({
-    
+    navigation
   }) {
     return (
       <SignInWithLens
       onSignIn={onSignIn}
-    />
+    /> 
     )
   }
